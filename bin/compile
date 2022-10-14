@@ -123,6 +123,8 @@ echo "export LD_LIBRARY_PATH=/app/$libs_dir:\$LD_LIBRARY_PATH" >>.profile.d/grap
 # Run dot -c to configure plugins (creates config6a file)
 LD_LIBRARY_PATH=$libs_dir "$install_dir"/usr/bin/dot -c
 
+apt-get install graphviz graphviz-dev
+
 echo "Successfully installed Graphviz $graphviz_version" | a
 echo "The binaries are in /app/$install_dir/usr/bin" | i
 echo
